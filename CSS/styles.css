@@ -1,0 +1,203 @@
+body {
+  background-color: rgb(255, 241, 224);
+  margin: 0;
+  padding: 0;
+  max-width: fit-content;
+}
+header {
+  height: 200px;
+  background-color: #ef7979;
+}
+h1 {
+  font-family: "crimson-text-regular", serif;
+  margin-bottom: 50px;
+  margin-left: 600px;
+  padding-top: 40px;
+  color: rgb(41, 70, 166);
+  font-size: 300%;
+}
+h2 {
+  color: #c63a3a;
+  font-family: "crimson-text-regular", serif;
+  padding-left: 10px;
+}
+h3 {
+  color: #0d32ab;
+}
+
+/*Making navbar look good*/
+nav {
+  font-size: 100%;
+  line-height: 150%;
+}
+ul.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+}
+nav li {
+  display: inline-block;
+}
+/*Styling the nav links to look like buttons*/
+nav a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "kanit", sans-serif;
+  background-color: #5dd6e7;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 250px;
+  margin-right: 20px;
+}
+
+nav a:visited {
+  color: pink;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #98092f;
+}
+/*Moving the images to the right of the page*/
+.images {
+  float: right;
+  margin-right: 100px;
+}
+/*Styling the form to look less horrid*/
+.form {
+  margin-top: 50px;
+  padding-left: 10px;
+}
+.form_label {
+  font-size: 110%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "kanit", sans-serif;
+}
+p {
+  font-family: "kanit", sans-serif;
+}
+.checkbox {
+  display: grid;
+  margin-left: 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+input[type="checkbox"] {
+  margin-left: 20px;
+}
+
+.radio {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+
+#TotalButton {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  background-color: aquamarine;
+}
+
+#Submit {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  background-color: rgb(0, 250, 54);
+}
+
+#Reset {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  background-color: rgb(252, 151, 20);
+}
+
+.buttons {
+  display: block;
+  margin-top: 10px;
+}
+
+.receipt {
+  padding-left: 10px;
+}
+
+/*media query for smaller screens */
+@media (min-width: 700px) and (max-width: 1000px) {
+  a.nav_link {
+    display: flex;
+  }
+  ul.navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 900px;
+  }
+  header {
+    height: 500px;
+  }
+  nav li {
+    margin-top: 20px;
+  }
+  h1 {
+    margin-left: 80px;
+    margin-right: 0px;
+  }
+  .images {
+    float: right;
+  }
+}
+
+/*media query for smart phones */
+@media (min-width: 300px) and (max-width: 699px) {
+  a.nav_link {
+    display: flex;
+  }
+  ul.navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+  }
+  nav li {
+    margin-top: 15px;
+  }
+  body {
+    display: inline-grid;
+    max-width: 600px;
+    clear: right;
+  }
+  header {
+    height: 500px;
+  }
+  h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  form {
+    max-width: 500px;
+  }
+  #first_name,
+  #last_name,
+  #date,
+  #date_label,
+  #color,
+  #email,
+  #email_label {
+    display: block;
+    margin-left: 0px;
+  }
+}
